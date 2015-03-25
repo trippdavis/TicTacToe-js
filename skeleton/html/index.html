@@ -11,8 +11,11 @@
     <script src="../../ttt-core-solution/ttt-core.js"></script>
     <script src="../js/ttt-view.js"></script>
 
+    <div id="ttt" class="game"></div>
     <script>
-      // Write your code here.
+      var game = new TTT.Game();
+      var $gameDiv = $('.game');
+      var view = new TTT.View(game, $gameDiv);
     </script>
   </body>
 </html>
